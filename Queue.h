@@ -27,8 +27,9 @@ int dequeue_struct(Queue *q){
     if(q->size==1) q->tailPtr=NULL;
     q->headPtr=t->nextPtr;
     q->size--;
-   }
+   
    return value;
+   }
    }
    printf("Empty queue \n");
    return 0;
